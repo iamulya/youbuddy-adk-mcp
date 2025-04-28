@@ -1,0 +1,9 @@
+google-api-python-client>=2.0.0
+google-auth-httplib2>=0.1.0
+google-auth>=1.16.0
+python-dateutil>=2.8.0 # Helpful for date parsing, though built-in datetime is used here
+google-genai>=1.5.0
+fastapi>=0.80.0
+uvicorn[standard]>=0.18.0
+pydantic>=2.0.0,<3.0.0
+fastapi-mcp
