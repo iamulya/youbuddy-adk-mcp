@@ -6,8 +6,8 @@ This project implements "YouBuddy," an AI agent built using the Google Agent Dev
 
 YouBuddy acts as a central orchestrator. When a user makes a request (e.g., "Summarize the latest videos from channel X" or "Give me a summary of the videos in playlist Y"), the agent:
 
-1.  Determines the user's need (channel videos by date vs. playlist videos).
-2.  Calls the appropriate MCP tool server to retrieve the list of relevant video URLs.
+1.  Determines the user's need (channel videos by date vs. playlist videos vs. simply creating summary for one video).
+2.  Calls the appropriate MCP tool server to retrieve the list of relevant video URLs in case a playlist or channel is provided.
 3.  Calls another MCP tool server to generate a summary for each video URL retrieved.
 4.  If multiple summaries were generated, calls a final MCP tool server to combine them into a single, coherent summary.
 5.  Presents the final result (single summary or combined summary) back to the user.
@@ -184,7 +184,7 @@ cd ..
 Interact with YouBuddy through the web interface. Try requests like:
 
 *   "Get videos from channel `UC_x5XG1OV2P6uZZ5FSM9Ttw` published on 2024-01-15 and summarize them." (Google Developers channel)
-*   "Summarize the videos in the playlist `PL6gx4Cwl9DGCkg2uj3PxUWhMDuTw3VKjM`." (Google I/O 2023 playlist)
+*   "Summarize the YouTube playlist: `https://www.youtube.com/playlist?list=PLIivdWyY5sqK5SRR9erGeAx_OTQpHy8cR`."
 *   "Can you summarize this video? https://www.youtube.com/watch?v=VIDEO_ID"
 
 The agent will use its tools to process your request and provide the relevant information or summaries.
