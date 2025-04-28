@@ -1,6 +1,3 @@
-Okay, here is a comprehensive README.md file based on the provided project structure and code snippets.
-
-```markdown
 # YouBuddy - ADK Agent with MCP Tools for YouTube Summarization
 
 This project implements "YouBuddy," an AI agent built using the Google Agent Development Kit (ADK). YouBuddy assists users by fetching and summarizing YouTube videos from channels or playlists. It leverages several backend microservices exposed as ADK MCP (Message-Oriented Communications Protocol) Tool Servers.
@@ -191,4 +188,3 @@ Interact with YouBuddy through the web interface. Try requests like:
 *   "Can you summarize this video? https://www.youtube.com/watch?v=VIDEO_ID"
 
 The agent will use its tools to process your request and provide the relevant information or summaries.
-```
